@@ -1,8 +1,3 @@
-Sure! Here's your complete professional `README.md` content in **one clean English text block**, ready to copy and paste into your file:
-
----
-
-```markdown
 # Driver Drowsiness Detection 🚗💤
 
 A real-time driver drowsiness detection system using a combination of Eye Aspect Ratio (EAR) via MediaPipe and a Convolutional Neural Network (CNN) model based on VGG16. The system triggers an audible alert if the driver shows signs of drowsiness.
@@ -11,30 +6,28 @@ A real-time driver drowsiness detection system using a combination of Eye Aspect
 
 ## Features
 
-- 🧠 CNN-based classification (`alert` vs `drowsy`)
-- 👁️ Real-time eye closure detection using EAR
-- 🔊 Plays a warning sound (`alert.wav`) when drowsiness is detected
-- 🎥 Webcam integration for live monitoring
-- 📊 Evaluation tools: confusion matrix, accuracy/loss plots, and sample image testing
+* 🧠 CNN-based classification (`alert` vs `drowsy`)
+* 👁️ Real-time eye closure detection using EAR
+* 🔊 Plays a warning sound (`alert.wav`) when drowsiness is detected
+* 🎥 Webcam integration for live monitoring
+* 📊 Evaluation tools: confusion matrix, accuracy/loss plots, and sample image testing
 
 ---
 
 ## Project Structure
 
 ```
-
-├── data/                   # Raw dataset folders
-├── data\_split/            # Organized train/test folders
-├── charts/                # Training accuracy/loss graphs
-├── external/              # Test images, sample outputs
-├── drowsiness\_detection\_combined.py   # Main real-time detection script
-├── train\_vgg16\_model.py   # Model training script
-├── evaluate\_model.py      # Accuracy report and confusion matrix
-├── alert.wav              # Alarm sound (must be in project root)
-├── requirements.txt       # Python dependencies
-└── README.md              # Project documentation
-
-````
+├── data/                         # Raw dataset folders
+├── data_split/                  # Organized train/test folders
+├── charts/                      # Training accuracy/loss graphs
+├── external/                    # Test images, sample outputs
+├── drowsiness_detection_combined.py   # Main real-time detection script
+├── train_vgg16_model.py         # Model training script
+├── evaluate_model.py            # Accuracy report and confusion matrix
+├── alert.wav                    # Alarm sound (must be in project root)
+├── requirements.txt             # Python dependencies
+└── README.md                    # Project documentation
+```
 
 ---
 
@@ -44,7 +37,7 @@ Install required packages:
 
 ```bash
 pip install -r requirements.txt
-````
+```
 
 Make sure you place `alert.wav` in the root directory.
 
@@ -108,6 +101,3 @@ This project is intended for educational and academic purposes. For any commerci
 * Detect yawning more accurately
 * Optimize for deployment on mobile (TensorFlow Lite)
 * Add driver ID recognition and alert logging
-
-```
-```
