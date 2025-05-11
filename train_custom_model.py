@@ -55,7 +55,7 @@ model.compile(
 # Train the model
 history = model.fit(
     train_generator,
-    epochs=15,
+    epochs=25,
     validation_data=test_generator
 )
 
