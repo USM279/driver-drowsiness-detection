@@ -84,7 +84,7 @@ Training performance charts and confusion matrix are available in the `/charts` 
 
 ## Author
 
-**Fadi Obada**
+**Obada F.**
 Software Engineering Student
 Sakarya University – 2025
 
@@ -100,4 +100,4 @@ This project is intended for educational and academic purposes. For any commerci
 
 * Detect yawning more accurately
 * Optimize for deployment on mobile (TensorFlow Lite)
-* Add driver ID recognition and alert logging
+* Add driver ID recognition and alert logging ( for Commercial Uses )

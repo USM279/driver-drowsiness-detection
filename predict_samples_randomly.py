@@ -6,14 +6,14 @@ from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
 
 # Load model (custom or VGG16)
-model = load_model('custom_cnn_model.h5')  # Change to vgg16_transfer_model.h5 if needed
+model = load_model('custom_cnn_model.h5')  #We Can Change to vgg16_transfer_model.h5
 
 # Image settings
 img_size = (150, 150)
 class_names = ['alert', 'drowsy']
 base_path = 'data_split/test'
 
-# Choose 3 random samples (from both classes)
+# Choose 3 random samples (from both classes the drowsy one or the alert )
 samples = []
 for cls in class_names:
     folder = os.path.join(base_path, cls)

@@ -4,7 +4,7 @@ from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras import layers, models
 import matplotlib.pyplot as plt
 
-# Set paths
+# Set paths fot the training
 train_dir = 'data_split/train'
 test_dir = 'data_split/test'
 image_size = (150, 150)
@@ -59,7 +59,7 @@ history = model.fit(
     validation_data=test_generator
 )
 
-# Save the model
+# Save the model as ..
 model.save('custom_cnn_model.h5')
 
 # Plot accuracy and loss

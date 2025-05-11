@@ -17,7 +17,7 @@ base_model = VGG16(
     weights='imagenet',
     input_shape=(150, 150, 3)
 )
-base_model.trainable = False  # freeze base model layers
+base_model.trainable = False  # freeze base model layers to add our layers
 
 # Add custom classification layers
 model = models.Sequential([
