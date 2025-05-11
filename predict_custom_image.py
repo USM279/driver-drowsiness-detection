@@ -3,14 +3,14 @@ from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
 import matplotlib.pyplot as plt
 
-# Path to your image
+# Path to my personal image
 img_path = 'external/test_image.jpg'  # Change this if needed
 img_size = (150, 150)
 
-# Load the model
+# Load the model the CNN model
 model = load_model('custom_cnn_model.h5')
 
-# Load and prepare the image
+# prepare the image to my custom
 img = image.load_img(img_path, target_size=img_size)
 img_array = image.img_to_array(img)
 img_array = np.expand_dims(img_array, axis=0) / 255.0
@@ -19,7 +19,7 @@ img_array = np.expand_dims(img_array, axis=0) / 255.0
 prediction = model.predict(img_array)
 predicted_label = 'alert' if prediction[0][0] < 0.5 else 'drowsy'
 
-# Show result
+# Show result as my own needs
 plt.imshow(img)
 plt.axis('off')
 plt.title(f"Predicted: {predicted_label}")

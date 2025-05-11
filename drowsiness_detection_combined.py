@@ -13,15 +13,15 @@ def calculate_ear(eye):
     C = np.linalg.norm(eye[0] - eye[3])
     return (A + B) / (2.0 * C)
 
-# Load model
+# Load model the VGG16 for best results
 model = load_model('vgg16_transfer_model.h5')
 IMG_SIZE = (150, 150)
 
-# Mediapipe setup
+# Mediapipe setup which is a library From GOOGLE for AI to recognize a face and eyes ETC
 mp_face_mesh = mp.solutions.face_mesh
 face_mesh = mp_face_mesh.FaceMesh(static_image_mode=False, max_num_faces=1, refine_landmarks=True)
 
-# EAR parameters
+# EAR parameters ( Eye Aspect Ratio )
 EAR_THRESHOLD = 0.2
 EAR_CONSEC_FRAMES = 10
 ear_counter = 0
@@ -41,7 +41,7 @@ def play_alarm():
     alarm_playing = False
 
 # Start webcam
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(1)
 
 while True:
     ret, frame = cap.read()
